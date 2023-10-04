@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-image: url('R.jpeg');  
+        }
+        #demoform{
+            border:2px solid black;
+            position: absolute;
+            width: 450px;
+            left:30%;
+            top:10%;
+            height: 300px;
+            background-image: url('logout.jpeg');
+             
+        }
+        #email{
+            margin-top: 10%;
+            margin-left: 30%;    
+        }
+        #password{
+            margin-top: 2%;
+            margin-left: 30%;  
+        }
+        #sighin{
+            margin-top: 5%;
+            margin-left: 30%;  
+        }
+            
+    </style>
+</head>
+<body>
+    <form id="demoform"  action="main.html" >
+       
+        <div id="email">
+            <h3>Login</h3>
+            <label for="email">Email:</label>
+            <input id="mail" type="email" required placeholder="Please enter your Email ID">
+         </div>
+
+         <div id="password" >
+            <label for="password">Password:</label>
+            <input id="passkey" type="password" required placeholder="Enter your password">
+         </div>
+
+         <div id="sighin">
+            <button type="submit" onclick="validate()"> Submit </button>
+         </div>
+
+    </form>
+
+    <script>
+       function validate(){
+        let emailid=document.getElementById("mail");
+        let passcode=document.getElementById("passkey");
+            if(emailid.value==="" || passcode.value==='' ){
+                alert("No balnk values are allowed");
+            }else{
+            }
+        }
+       
+       
+    </script>
+
+
+</body>
+</html>
